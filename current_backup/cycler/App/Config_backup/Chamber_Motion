@@ -1,0 +1,33 @@
+CAHMBER_ERROR1		: 0
+CAHMBER_ERROR2		: 0
+CAHMBER_ERROR3		: 0
+CAHMBER_ERROR4		: 0
+CAHMBER_ERROR5		: 0
+CAHMBER_ERROR6		: 0
+CAHMBER_ERROR7		: 0
+CAHMBER_ERROR8		: 0
+CAHMBER_ERROR9		: 0
+CAHMBER_ERROR10		: 0
+CAHMBER_ERROR11		: 0
+CAHMBER_ERROR12		: 0
+CAHMBER_ERROR13		: 0
+CAHMBER_ERROR14		: 0
+CAHMBER_ERROR15		: 0
+CAHMBER_ERROR16		: 0
+CHAMBER_DIO_USE		: 0
+CHAMBER_PER_UNIT	: 0
+CHAMBER_DIO_SIG_NUM	: 0
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Update : 2017.06.22 [SCH]
+Writer : SCH
+================================================================================
+
+Chamber Error Motion =>	0 : Ch Pause, 1 : Unit ShutDown
+CHAMBER_DIO_USE		 => 0 : Not Use (default)
+                        1 : Unit Per Chamber Error Control
+CHAMBER_PER_UNIT	 => Unit Per Chamber
+CHAMBER_DIO_SIG_NUM	 => DIO_Signal Per Chamber

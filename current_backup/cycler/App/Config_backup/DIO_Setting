@@ -1,0 +1,24 @@
+sensCount					:	1
+dioDelay[mS]				:	7000
+powerSwitchTimeout[mS]		:	3000
+resetSwitchTimeout[mS]		:	5000
+powerFailTimeout1[mS]		:	3000
+powerFailTimeout2[mS]		:	10000
+upsBatteryFailTimeout[mS]	:	2000
+dio_Control_Flag			:	1
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2015.09.24
+Writer : OYS
+================================================================================
+sensCount					:	Signal sens count		(default : 1)
+dioDelay[mS]				:	DIO Control Delay Time	(default : 7000)
+powerSwitchTimeout[mS]		:	Power Switch Timeout	(default : 3000)
+resetSwitchTimeout[mS]		:	Reset Switch Timeout	(default : 5000)
+powerFailTimeout1[mS]		:	Short Power Fail Timeout(default : 3000)
+powerFailTimeout2[mS]		:	Long Power Fail Timeout	(defualt : 10000)
+upsBatteryFailTimeout[mS]	:	Ups Battery Fail Timeout(default : 2000)
+dio_Control_Flag			:	DIO Control Use Flag	(default : 1)

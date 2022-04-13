@@ -1,0 +1,3 @@
+ 4549 ttyp0    S      0:00 ./Meter2
+ 4726 ttyp0    S      0:00 sh -c ps -ax | grep ./Meter2 > /project/Switching_5V2
+ 4728 ttyp0    S      0:00 grep ./Meter2

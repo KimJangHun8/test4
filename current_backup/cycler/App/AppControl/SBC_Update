@@ -1,0 +1,16 @@
+#!/bin/bash
+DATE="`date '+%Y%m%d%H%M'`"
+
+sleep 30
+
+cd /project/Cycler ; rm -rf current_org ; mv current current_org
+
+cd /root/project_backup_program ; mv current_backup /project/Cycler/current
+
+cd /root/ ; rm -rf project_backup_program ; rm -rf Auto_Update.tar.gz
+
+cd /project/Cycler/current/cycler/App/AppControl ; make dir ; make all
+
+cd /root/ ; rm -rf SBC_Update ; reboot
+
+echo "Current Update $DATE"

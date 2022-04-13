@@ -1,0 +1,6 @@
+#!/bin/bash
+DATE="`date '+%Y%m%d%H%M'`"
+cd ../../../../
+
+tar cvfz Cycler_current_backup_program_$DATE.tar.gz current
+echo "current_backup_program end."

@@ -1,0 +1,40 @@
+ipAddress           :   192.168.4.200
+sendPort            :   0
+receivePort         :   0
+networkPort         :   4001
+replyTimeout        :   10
+retryCount          :   10
+netTimeout          :   10
+pingTimeout         :   0
+CmdSendLog          :   0
+CmdRcvLog           :   0
+CmdSendLog_Hex      :   0
+CmdRcvLog_Hex       :   0
+CommCheckLog        :   0
+monitorInterval     :   0
+saveInterval        :   0
+installed_cooling   :   0
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2015.07.01
+Writer : OYS
+================================================================================
+ipAddress           => Operator PC IP
+sendPort			=> (Default : 0)
+receivePort			=> (Default : 0)
+networkPort			=> SBC <-> PC Network Port No. (Default : 2001)
+replyTimeout		=> Cmd Reply Timeout (Default : 30)
+retryCount			=> Connection retry count (Default : 3)
+netTimeout			=> setValue(sec) < netTimeout(sec), Cooling Process Kill.
+pingTimeout         => SBC -> PC Ping Period (sec)
+CmdSendLog          => CmdSendLog Print Flag
+CmdRcvLog           => CmdRcvLog Print Flag
+CmdSendLog_Hex      => CmdSendLog_Hex Print Flag
+CmdRcvLog_Hex       => CmdRcvLog_Hex Print Flag
+CommCheckLog        => CommunicationCheckLog Print Flag
+monitorInterval		=> NoUse (Default : 0)
+saveInterval		=> NoUse (Default : 0)
+installed_cooling	=> installed_Cooling (Default : 1)

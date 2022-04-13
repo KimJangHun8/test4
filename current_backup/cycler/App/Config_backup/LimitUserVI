@@ -1,0 +1,30 @@
+limit_current_use		: 0
+limit_current_action	: 0
+limit_current_CH_act	: 0
+limit_current			: 0
+limit_current_time		: 0
+limit_voltage_use		: 0
+limit_voltage_action	: 0
+limit_voltage_CH_act	: 0
+limit_voltage			: 0
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Update : 2017.10.26 [SCH]
+Writer : SCH
+================================================================================
+limit_current_use		=>	Limit Current Safety Use (Default : 0)
+limit_current_action	=>	Limit Current Safty Act
+							0 : Pause	1 : Schedule End
+limit_current_CH_act	=>	Limit Current Safety CH Select
+							0 : Part Ch	1 : All Ch
+limit_current			=>	Limit Current Safety Current Setting
+limit_current_time		=>	Limit Current Safety Time Setting
+limit_voltage_use		=>	Limit Voltage Safety Use (Default : 0)
+limit_voltage_action	=>	Limit Voltage Safty Act
+							0 : Pause	1 : Schedule End
+limit_voltage_CH_act	=>	Limit Current Safety CH Select
+							0 : Part Ch	1 : All Ch
+limit_voltage			=>	Limit Current Safety Voltage Setting

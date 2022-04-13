@@ -1,0 +1,10 @@
+comPort				:	2
+comBps				:	19200
+CmdSendLog			:	0
+CmdRcvLog			:	0
+CmdSendLog_Hex		:	0
+CmdRcvLog_Hex		:	0
+CommCheckLog		:	0
+countMeter			:	1
+readType			:	0
+useFlag				:	1

@@ -1,0 +1,70 @@
+SMPS_7.5V[0] : 0
+SMPS_7.5V[1] : 0
+SMPS_7.5V[2] : 0
+SMPS_7.5V[3] : 0
+SMPS_7.5V[4] : 0
+SMPS_7.5V[5] : 0
+SMPS_7.5V[6] : 0
+SMPS_7.5V[7] : 0
+SMPS_3.3V[0] : 0
+SMPS_3.3V[1] : 0
+SMPS_3.3V[2] : 0
+SMPS_3.3V[3] : 0
+SMPS_3.3V[4] : 0
+SMPS_3.3V[5] : 0
+SMPS_3.3V[6] : 0
+SMPS_3.3V[7] : 0
+OT[0]		 : 0
+OT[1]		 : 0
+OT[2]		 : 0
+OT[3]		 : 0
+OT[4]		 : 0
+OT[5]		 : 0
+OT[6]		 : 0
+OT[7]		 : 0
+
+BoardFaultBitSet
+BoardNo		USE_FLAG	ACTIVE<H/L>		OT_BIT
+Board1		0			1				1
+Board2		0			0				0
+Board3		0			0				0
+Board4		0			0				0
+
+BoardNo		USE_FLAG	ACTIVE<H/L>		MAIN_SMPS_FAULT_BIT
+Board1		0			0				2		
+Board2		0			0				0
+Board3		0			0				0
+Board4		0			0				0
+
+BoardNo		USE_FLAG	ACTIVE<H/L>		CONTROL_SMPS_FAULT_BIT
+Board1		0			0				0
+Board2		0			0				0
+Board3		0			0				0
+Board4		0			0				0
+
+MAIN_REV11_PS_FAULT
+PS_NO			USE_ADDR	ACTIVE_CH		PS_BIT
+PS_7V[0]		629			8				1
+PS_7V[1]		629			8				2
+PS_7V[2]		669			8				1
+PS_7V[3]		669			8				2
+PS_7V[4]		0			0				0
+PS_7V[5]		0			0				0
+PS_7V[6]		0			0				0
+PS_7V[7]		0			0				0
+
+PS_NO			USE_ADDR	ACTIVE_CH		PS_BIT
+PS_3.3V[0]		62a			8				1
+PS_3.3V[1]		62a			8				2
+PS_3.3V[2]		66a			8				1
+PS_3.3V[3]		66a			8				2
+PS_3.3V[4]		0			0				0
+PS_3.3V[5]		0			0				0
+PS_3.3V[6]		0			0				0
+PS_3.3V[7]		0			0				0
+
+OT_NO			USE_ADDR	OT_BIT			
+OT_Fault[0]		62b			ff					
+OT_Fault[1]		62e			ff
+OT_Fault[2]		66b			ff
+OT_Fault[3]		66e			ff

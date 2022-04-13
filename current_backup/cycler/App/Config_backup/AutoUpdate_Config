@@ -1,0 +1,18 @@
+AutoUpdateUseFlag	:	1
+ServerIP			:   192.168.100.1
+ServerConnectFlag	:	0
+UpdateServerSet		:	0
+retryInterval(sec)	:	10
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2019.06.28
+Writer : OYS
+================================================================================
+AutoUpdateUseFlag	=> AutoUpdate USE Flag						(Default : 1)
+ServerIP			=> Update server IP
+ServerConnectFlag	=> Update server file check flag			(default : 0)
+UpdateServerSet		=> Use as an update server					(Default : 0)
+retryInterval(sec)	=> File Check Interval						(Default : 10)

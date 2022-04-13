@@ -1,0 +1,34 @@
+PROCESS		 :	USE
+MainClient	 :	1
+DataSave	 :	1
+CaliMeter	 :	1
+AnalogMeter	 :	0
+FADM		 :	0
+FndMeter	 :	0
+mControl	 :	1
+CaliMeter2	 :	0
+ExtClient	 :	0
+AnalogMeter2 :	0
+AutoUpdate	 :	0
+DAQClient	 :	0
+Cooling		 :	0
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2015.07.27
+Writer : OYS
+================================================================================
+MainClient	 :	SBC <-> PC Communication Process		(Default : 1)
+DataSave	 :	RawData Save Process 					(Default : 1)
+CaliMeter	 :	Calibration Process 					(Default : 1)
+AnalogMeter  :	Use Temperature Module => 1				(Default : 0)
+FADM		 :	Use FAST Analog to Digital Module => 1	(Default : 0)
+FndMeter	 :	Use Flexible Numeric Display Meter => 1	(Default : 0)
+mControl	 :	mControl (Real Time Linux Module)		(Default : 1)
+CaliMeter2	 :	Current Offset Calibration Process		(Default : 0)
+ExtClient	 :	Ext Control Client Process				(Default : 0)
+AnalogMeter2 :	Use Temperature Module => 1				(Default : 0)
+AutoUpdate	 :  Use Firmware AutoUpdate Process			(Default : 1)
+Cooling		 :	Cooling Control Process					(Default : 0)

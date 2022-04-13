@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+
+#hdparm -c 1 -d 1 -k 1 /dev/hda
+
+#cd /project/Switching_5V200A_Cycler/current/cycler/App/AppControl
+cd /project/HYUNDAI_2V100A_Cycler/current/cycler/App/AppControl
+./bootOnStart

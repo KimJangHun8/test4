@@ -1,0 +1,49 @@
+modelName			:	xxx_Cycler_xV_xA_xR
+moduleNo			:	1
+bootOnStart			:	0
+DebugLogFlag		:	1
+sbcType				:	6
+systemType			:	6
+osVersion			:	2
+debugType			:	1
+versionNo			:	20190901
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2015.07.01
+Writer : OYS
+================================================================================
+modelName			=> [VENDER]_Cycler_[MaxVoltage]V_[MaxCurrent]A_[Range]R
+moduleNo			=> Unit No (Default : 1)
+bootOnStart			=> Auto Program Run at boot
+DebugLogFlag		=> Debug Log Save Flag
+sbcType				=> SBC TYPE
+						1 : HS_6637
+						2 : WEB_6580
+						3 : HS_4020
+						4 : WAFER_E669
+						5 : WAFER_MARK
+						6 : EM104_A5362 (Default)
+systemType			=> SYSTEM TYPE
+						0 : FORMATION
+						1 : IR_OCV
+						2 : AGING
+						3 : GRADER
+						4 : SELECTOR
+						5 : OCV
+						6 : CYCLER (Linear)
+						7 : CYCLER (PCU)
+						8 : CYCLER (CAN)
+
+osVersion			=> Linux OS Version
+						0 : Kernel ver 2.0, RTLinux ver 1.3
+						1 : Kernel ver 2.2, RTLinux ver 2.0
+						2 : Kernel ver 2.4, RTLinux ver 2.3 (Default)
+						3 : Kernel ver 2.6, RTLinux ver 3.2
+debugType			=> Debug Mode Flag (Default : 0)
+						0 : Not USE
+						1 : Voltage Fixation (3.5V)
+						2 : Simulation Mode
+versionNo			=> Parameter VersionNo

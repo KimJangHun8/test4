@@ -1,0 +1,17 @@
+######################################
+########### default ##################
+######################################
+VERSION_DETAIL_SHOW 1
+_TEMP_CALI
+_SK_CALI_TYPE
+_AC_FAIL_RECOVERY
+NETWORK_VERSION == 4102  CH_AUX_DATA 0
+NETWORK_VERSION == 4103  CH_AUX_DATA 1
+######################################
+
+##MAIN_P_VER1 : 2001-S01-R001-N01
+
+##MAIN_P_VER1 : 2002-S01-R001-N01
+_TRACKING_MODE
+
+##MAIN_P_VER1 : before version

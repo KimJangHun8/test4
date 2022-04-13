@@ -1,0 +1,54 @@
+parameter/2_SDI_parameter/inv_fault_continue
+=> SDI Mass ILT Switching INV Fault -> auto continue Count Number
+
+parameter/2_SDI_parameter/CC_CV_hump_Config
+=> 천안 삼성 강성민 프로 안전 조건 추가
+
+parameter/2_SDI_parameter/Pause_save_Config
+=> 천안 삼성 강성민 프로 일시 정지 시 데이터 저장 기능
+=> 일시 정지 후 작업 계속 시 초기 데이터 기록 기능
+
+######################################
+########### default ##################
+######################################
+SHUNT_R_RCV 2
+CH_AUX_DATA 0
+######################################
+
+## SUWON
+##MAIN_P_VER1 : 3001-S01-R001-N01
+VERSION_DETAIL_SHOW 0
+_SDI_SAFETY_V1
+
+## CHEONAN
+##MAIN_P_VER1 : 3002-S01-R001-N01
+VERSION_DETAIL_SHOW 0
+_SDI_SAFETY_V1
+_SDI_SAFETY_V2
+_AC_FAIL_RECOVERY
+
+## CHEONAN
+##MAIN_P_VER1 : 3003-S01-R001-N01
+VERSION_DETAIL_SHOW 0
+_SDI_SAFETY_V1
+_SDI_SAFETY_V2
+_AC_FAIL_RECOVERY
+_ACIR
+
+## ULSAN
+##MAIN_P_VER1 : 3101-S01-R001-N01
+VERSION_DETAIL_SHOW 1
+ SUB_P_VER == 1
+ _ULSAN_SDI_SAFETY
+
+## MASS ILT
+##MAIN_P_VER1 : 3111-S01-R001-N01
+VERSION_DETAIL_SHOW 1
+_CH_CHAMBER_DATA
+_CH_SWELLING_DATA
+ SUB_P_VER == 1
+ _ULSAN_SDI_SAFETY
+
+##MAIN_P_VER1 : before version
+VERSION_DETAIL_SHOW 0
+_SDI_SAFETY_V0

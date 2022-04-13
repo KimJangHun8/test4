@@ -1,0 +1,11 @@
+OVP_CHECK_TIME					: 2000
+OTP_CHECK_TIME					: 2000
+DROP_V_Charge_start_time		: 180
+DROP_V_Discharge_start_time		: 180
+DROP_V_Charge_Check_time		: 1
+DROP_V_Discharge_Check_time		: 1
+CV_Voltage_start_time			: 500
+CV_Current_start_time			: 500
+OVP_Pause_flag					: 0
+OTP_Pause_flag					: 0
+limit_time_voltage				: 0

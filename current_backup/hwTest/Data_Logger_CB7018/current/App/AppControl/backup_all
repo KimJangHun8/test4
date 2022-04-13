@@ -1,0 +1,22 @@
+
+cd /project/HYUNDAI_2V100A_Cycler/current/hwTest/Data_Logger_CB7018
+mkdir project_backup_all
+cd project_backup_all
+
+cp -rf ../current current_backup
+tar cvfz current_backup.tar.gz current_backup/*
+rm -rf current_backup
+echo "current_backup end."
+sleep 1
+
+cp -rf /project/HYUNDAI_2V100A_Cycler/current/hwTest/Data_Logger_CB7018/config config_backup
+tar cvfz config_backup.tar.gz config_backup/*
+rm -rf config_backup
+echo "config_backup end."
+sleep 1
+
+cd /project/HYUNDAI_2V100A_Cycler/current/hwTest/Data_Logger_CB7018
+tar cvfz Data_Logger_CB7018_backup_all.tar.gz project_backup_all/*
+rm -rf project_backup_all
+echo "project_backup_all end."
+

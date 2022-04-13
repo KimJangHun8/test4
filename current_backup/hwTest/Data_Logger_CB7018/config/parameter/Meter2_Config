@@ -1,0 +1,8 @@
+comPort				:	2
+comBps				:	9600
+CmdSendLog			:	0
+CmdRcvLog			:	0
+CmdSendLog_Hex		:	1
+CmdRcvLog_Hex		:	1
+CommCheckLog		:	0
+saveInterval		:	5000

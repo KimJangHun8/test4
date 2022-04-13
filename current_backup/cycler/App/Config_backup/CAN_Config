@@ -1,0 +1,46 @@
+useflag			:	0
+installedCAN  	: 	4
+					[Main1] [Main2] [Inv]  [io] [Non] [Non] [Non] [Non]  
+functionType  	:	   1       1      2 	 3     0     0     0     0
+canPort		  	:	   1 	   2	  3		 4     0     0     0     0
+CanBps		  	:	500000  500000  500000  500000 0     0     0     0
+CommType	  	:	   0       0      0      0     0     0     0     0
+CmdSendLog	  	:	   0       0      0      0     0     0     0     0
+CmdRcvLog	  	:	   0       0      0      0     0     0     0     0
+TimeOut(Sec)  	:	   5       5      5 	 5     0     0     0     0
+InsDevNum(EA)  	:	   8       8      1 	 0     0     0     0     0
+chInInv_1(EA)  	:	   32      32     0 	 0     0     0     0     0
+chInInv_2(EA)  	:	   0       0      0 	 0     0     0     0     0
+chInInv_3(EA)  	:	   0       0      0 	 0     0     0     0     0
+chInInv_4(EA)  	:	   0       0      0 	 0     0     0     0     0
+canInBd_1(Port)	:	   1       1      1 	 1     1     1     1     1
+canInBd_2(Port)	:	   2       2      2 	 2     2     2     2     2
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2019.06.19
+Writer : OYS
+================================================================================
+useFlag				=> CAN Communication Use Flag
+installedCAN		=> The number of installed CAN Port
+functionType		=> Function Type
+						1 : Main Board
+						2 : Inverter
+						3 : IO Board
+canPort				=> The number of used Port (Disable : 0)
+CanBps				=> CAN Communication Speed (Default : 500000(500Kbps))
+CommType			=> Communication Type (Default : 0)
+						0 : Standard
+						1 : Extended 
+CmdSendLog			=> Communication Send Log Print Flag
+CmdRcvLog			=> Communication Receive Log Print Flag
+TimeOut(Sec)		=> Communication Error Check Time
+InsDevNum(EA)		=> The number of used device number
+chInInv_1(EA)		=> The number of used channel in Inverter[01~08]
+chInInv_2(EA)		=> The number of used channel in Inverter[09~16]
+chInInv_3(EA)		=> The number of used channel in Inverter[17~24]
+chInInv_4(EA)		=> The number of used channel in Inverter[25~32]
+canInBd_1(Port)		=> CAN port number used on MainBD[01~08]
+canInBd_2(Port)		=> CAN port number used on MainBD[09~16]

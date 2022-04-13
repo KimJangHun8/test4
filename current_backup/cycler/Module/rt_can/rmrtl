@@ -1,0 +1,15 @@
+#!/bin/sh
+
+rmmod rt_can
+
+if lsmod | grep -q psc; then
+	rmmod psc
+fi
+rmmod rtl_sched
+rmmod rtl_fifo
+if lsmod | grep -q rtl_posixio; then
+	rmmod rtl_posixio
+fi
+rmmod rtl_time
+rmmod rtl
+exit 0

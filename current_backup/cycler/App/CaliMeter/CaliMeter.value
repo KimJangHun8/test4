@@ -1,0 +1,50 @@
+main.c:	while(myData->AppControl.signal[APP_SIG_CALI_METER_PROCESS] == P1) {
+main.c:	myPs = &(myData->CaliMeter);
+main.c:	myData->AppControl.signal[APP_SIG_CALI_METER_PROCESS] = P1;
+main.c:	if(myData->mData.cali_hallCT == 1){
+main.c:	myData->AppControl.signal[APP_SIG_CALI_METER_PROCESS] = P3;	
+message.c:	if(myData->msg[fromPs].write_idx == myData->msg[fromPs].read_idx)
+message.c:	myData->msg[fromPs].read_idx++;
+message.c:	if(myData->msg[fromPs].read_idx >= MAX_MSG)
+message.c:		myData->msg[fromPs].read_idx = 0;
+message.c:	idx = myData->msg[fromPs].read_idx;
+message.c:	msg = myData->msg[fromPs].msg_val[idx].msg;
+message.c:	ch = myData->msg[fromPs].msg_val[idx].ch;
+message.c:	val = myData->msg[fromPs].msg_val[idx].val;
+message.c:	idx = myData->msg[toPs].write_idx;
+message.c:	myData->msg[toPs].msg_val[idx].msg = msg;
+message.c:	myData->msg[toPs].msg_val[idx].ch = ch;
+message.c:	myData->msg[toPs].msg_val[idx].val = val;
+message.c:	myData->msg[toPs].write_idx = idx;
+message.c:	idx = myData->msg[toPs].write_idx;
+message.c:	memcpy((char *)&myData->msg[toPs].msg_ch_flag[idx].bit_32[0],
+serial.c:		if(myData->mData.cali_hallCT == P1){
+serial.c:	if(myData->mData.config.FadBdUse == P1){
+serial.c:		printf("%f",myData->cali.orgAD_fad[0]/1000.0);
+serial.c:		printf("%f",myData->cali.orgAD_fad[1]/1000.0);
+userlog.c:	memset((char *)&myData->log[type].LogPath, 0x00,
+userlog.c:	strcpy((char *)&myData->log[type].LogPath, pathname);
+userlog.c:	memset((char *)&myData->log[type].LogFile, 0x00,
+userlog.c:	strcpy((char *)&myData->log[type].LogFile, filename);
+userlog.c:	rtn = strcmp((char *)&myData->log[type].OpenLogFile, LogFile);
+userlog.c:		if(myData->log[type].OpenLogFile[0] == 0x00) {
+userlog.c:			memset((char *)&myData->log[type].OpenLogFile, 0x00,
+userlog.c:			strcpy((char *)&myData->log[type].OpenLogFile, LogFile);
+userlog.c:			memset((char *)&myData->log[type].OpenLogFile, 0x00,
+userlog.c:			strcpy((char *)&myData->log[type].OpenLogFile, LogFile);
+userlog.c:	myData->log[type].LogDirection = LOG_2BOTH;
+userlog.c:	//myData->log[type].LogDirection = LOG_2STDOUT;
+userlog.c:	//myData->log[type].LogDirection = LOG_2FILE;
+userlog.c:    logopen((char *)&myData->log[type].LogPath,
+userlog.c:		(char *)&myData->log[type].LogFile, LOG_FNAME_DATE, type);
+userlog.c:	if(myData->log[type].LogDirection & LOG_2FILE) {
+userlog.c:		if(type == DEBUG_LOG && myData->AppControl.config.DebugLogFlag == 0) {
+userlog.c:			if((log_fp = fopen((char *)&myData->log[type].OpenLogFile, "a"))
+userlog.c:			fprintf(log_fp, "m%03d:%s:%s: ", myData->AppControl.config.moduleNo,
+userlog.c:			chmod((char *)&myData->log[type].OpenLogFile, 0666);
+userlog.c:	if(myData->log[type].LogDirection & LOG_2STDOUT) {
+userlog.c:		printf("m%03d:%s:%s: ", myData->AppControl.config.moduleNo,
+userlog.c:	if(myData->log[type].LogDirection & LOG_2FILE) {
+userlog.c:		if((log_fp = fopen((char *)&myData->log[type].OpenLogFile, "a"))
+userlog.c:		chmod((char *)&myData->log[type].OpenLogFile, 0666);
+userlog.c:	if(myData->log[type].LogDirection & LOG_2STDOUT) {

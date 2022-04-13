@@ -1,0 +1,9 @@
+modelName			:	Data_Logger
+moduleNo			:	1
+bootOnStart			:	0
+DebugLogFlag		:	0
+sbcTpye				:	4
+systemType			:	0
+location			:	1
+osVersion			:	0
+debugType			:	0

@@ -1,0 +1,46 @@
+ipAddress           :   192.168.100.1
+sendPort            :   0
+receivePort         :   0
+networkPort         :   2001
+replyTimeout        :   30
+retryCount          :   3
+netTimeout          :   1000
+pingTimeout[Sec]   	:   60
+CmdSendLog          :   1
+CmdRcvLog           :   1
+CmdSendLog_Hex      :   0
+CmdRcvLog_Hex       :   0
+CommCheckLog        :   0
+monitorInterval		:   1000
+saveInterval		:   100
+protocol_version    :   1001
+state_change        :   2
+CRC_TYPE	        :   1
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2017.01.10
+Writer : OYS
+================================================================================
+ipAddress           => Ext Control Operator PC IP
+sendPort			=> (Default : 0)
+receivePort			=> (Default : 0)
+networkPort			=> SBC <-> PC Network Port No. (Default : 2001)
+replyTimeout		=> Cmd Reply Timeout (Default : 30)
+retryCount			=> Connection retry count (Default : 3)
+netTimeout			=> setValue(sec) < netTimeout(sec), MainClinet Process Kill.
+pingTimeout         => SBC -> PC Ping Period (sec)
+CmdSendLog          => CmdSendLog Print Flag
+CmdRcvLog           => CmdRcvLog Print Flag
+CmdSendLog_Hex      => CmdSendLog_Hex Print Flag
+CmdRcvLog_Hex       => CmdRcvLog_Hex Print Flag
+CommCheckLog        => CommunicationCheckLog Print Flag
+monitorInterval		=> Send Monitoring Data Interval Time[mSec]	(Default : 1000)
+saveInterval		=> Send Save Data Interval Time[mSec]		(Default :  100)
+protocol_version    => SBC <-> Ext Control PC Protocol Version	(Default : 1001)
+state_change        => Network Disconnect Action (1 : PAUSE, 2 : RUN)
+CRC_TYPE			=>	1 : CRC-16-POLYNOMAIL
+						2 : CRC-16-CCITT
+						3 : CRC-16-MODBUS

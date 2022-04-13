@@ -1,0 +1,36 @@
+Input_Addr_No	5
+Output_Addr_No	5
+Expend_Addr_No	0
+No	Addr(Input)	Addr(Output)	Addr(Expend)	Description
+0	602			604				0				PS_ON1(WR)
+1	611			610				0				PS_ON2(WR)
+2	613			611				0				7.5V_FAIL(RD)
+3	603			612				0				OT_FAIL(RD)
+4	610			613				0				3.3V_FAIL(RD)
+5	0			0				0				OT_FAIL(RD)
+6	0			0				0			    STATE_LED(WR)
+7	0			0				0				VL_PLUS_FAULT(RD)
+8	0			0				0				VL_MINUS_FAULT(RD)
+9	0			0				0				V_FLT_CH_BD(RD)
+10	0			0				0				OV(RD)
+11	0			0				0				OC(RD)
+12	0			0				0				OT(RD)
+13	0			0				0				METER_HIGH(RD)
+14	0			0				0				METER_LOW(RD)
+15	0			0				0				Spare
+16	0			0				0				Spare
+17	0			0				0				Spare
+18	0			0				0				Spare
+19	0			0				0				Spare
+20	0			0				0				Spare
+21	0			0				0				Spare
+22	0			0				0				Spare
+23	0			0				0				Spare
+24	0			0				0				Spare
+25	0			0				0				Spare
+26	0			0				0				Spare
+27	0			0				0				Spare
+28	0			0				0				Spare
+29	0			0				0				Spare
+30	0			0				0				Spare
+31	0			0				0				Spare

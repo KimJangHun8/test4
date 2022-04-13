@@ -1,0 +1,160 @@
+chNo		: 0
+chNo_master : 1
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 1
+chNo_master : 2
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 2
+chNo_master : 3
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 3
+chNo_master : 4
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 4
+chNo_master : 5
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 5
+chNo_master : 6
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 6
+chNo_master : 7
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 7
+chNo_master : 8
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 8
+chNo_master : 9
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 9
+chNo_master : 10
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 10
+chNo_master : 11
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 11
+chNo_master : 12
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 12
+chNo_master : 13
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 13
+chNo_master : 14
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 14
+chNo_master : 15
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+
+chNo		: 15
+chNo_master : 16
+chNo_slave1 : 0
+chNo_slave2 : 0
+chNo_slave3 : 0
+opType		: 0
+reserved1   : 0
+reserved2   : 0
+reserved3   : 0
+

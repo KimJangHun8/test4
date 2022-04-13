@@ -1,0 +1,766 @@
+cali.c:	myPs->misc.caliPoint[bd-1][flag] = value*1000;
+cali.c:			myPs->misc.cali_point1[bd-1][i] = myPs->misc.org_temp[bd-1][i];
+cali.c:			printf("%ld ",myPs->misc.cali_point1[bd-1][i]);
+cali.c:			myPs->misc.cali_point2[bd-1][i] = myPs->misc.org_temp[bd-1][i];
+cali.c:			printf("%ld ",myPs->misc.cali_point2[bd-1][i]);
+cali.c:		if(labs(CALI_POINT1 - myPs->misc.cali_point1[bd-1][i]) >= 5000)
+cali.c:		if(labs(CALI_POINT2 - myPs->misc.cali_point2[bd-1][i]) >= 5000)
+cali.c://	memcpy((char *)&myPs->misc.measure_gain[bd-1][0],(char *)&myPs->
+cali.c://		config.measure_gain[bd-1][0],sizeof(myPs->misc.measure_gain[bd-1]));
+cali.c://	memcpy((char *)&myPs->misc.measure_offset[bd-1][0],(char *)&myPs->
+cali.c://		config.measure_offset[bd-1][0],sizeof(myPs->misc.measure_offset[bd-1]));
+cali.c:	y1 = myPs->misc.caliPoint[bd-1][0];
+cali.c:	y2 = myPs->misc.caliPoint[bd-1][1];
+cali.c:		x1 = myPs->misc.cali_point1[bd-1][i];
+cali.c:		x2 = myPs->misc.cali_point2[bd-1][i];
+cali.c:		myPs->misc.measure_gain[bd-1][i] = gain;
+cali.c:		myPs->misc.measure_offset[bd-1][i] = offset;
+cali.c:	myPs->misc.caliFlag[bd-1] = P1;
+cali.c:		if(myPs->misc.caliFlag[i] == P1) {
+cali.c:			myPs->misc.caliFlag[i] = P0;
+cali.c:			memcpy((char *)&myPs->config.measure_gain[i][0],(char *)&myPs->
+cali.c:				misc.measure_gain[i][0],sizeof(myPs->config.measure_gain[i]));
+cali.c:			memcpy((char *)&myPs->config.measure_offset[i][0],(char *)&myPs->
+cali.c:				misc.measure_offset[i][0],sizeof(myPs->config.measure_offset[i]));
+local_utils.c:		myPs->signal[i] = P0;
+local_utils.c:	myPs->misc.processPointer = (int)&myData;
+local_utils.c:    myPs->config.comPort = atoi(buf);
+local_utils.c:    myPs->config.comBps = atoi(buf);
+local_utils.c:    myPs->config.CmdSendLog = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.CmdRcvLog = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.CmdSendLog_Hex = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.CmdRcvLog_Hex = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.CommCheckLog = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.countMeter = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.readType = (unsigned char)atoi(buf);
+local_utils.c:  	 		myPs->config.measure_offset[i][j] = atol(buf);
+local_utils.c:    myPs->config.functionType = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.comBps2 = atoi(buf);
+local_utils.c:    myPs->config.commType2 = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.autoStart = (unsigned char)atoi(buf);
+local_utils.c:  	 		myPs->config.measure_gain[i][j] = atof(buf);
+local_utils.c:			if(myPs->config.measure_gain[i][j]  == 0.0)
+local_utils.c:				myPs->config.measure_gain[i][j]  = 1.0 ;
+local_utils.c:    myPs->config.multiNum = (unsigned char)atoi(buf);
+local_utils.c:    myPs->config.connectionCheck = (unsigned char)atoi(buf);
+local_utils.c:    fprintf(fp, "comPort            :	%d\n",myPs->config.comPort); 
+local_utils.c:    fprintf(fp, "comBps             :	%d\n",myPs->config.comBps); 
+local_utils.c:    fprintf(fp, "CmdSendLog         :	%d\n",myPs->config.CmdSendLog); 
+local_utils.c:    fprintf(fp, "CmdRcvLog          :	%d\n",myPs->config.CmdRcvLog); 
+local_utils.c:    fprintf(fp, "CmdSendLog_Hex     :	%d\n",myPs->config.CmdSendLog_Hex); 
+local_utils.c:    fprintf(fp, "CmdRcvLog_Hex      :	%d\n",myPs->config.CmdRcvLog_Hex); 
+local_utils.c:    fprintf(fp, "CommCheckLog       :	%d\n",myPs->config.CommCheckLog); 
+local_utils.c:    fprintf(fp, "countMeter         :	%d\n",myPs->config.countMeter); 
+local_utils.c:    fprintf(fp, "readType           :	%d\n",myPs->config.readType); 
+local_utils.c:  	 		 fprintf(fp, "%ld ",myPs->config.measure_offset[i][j]);
+local_utils.c:    fprintf(fp, "functionType       :	%d\n",myPs->config.functionType); 
+local_utils.c:    fprintf(fp, "comBps2            :	%d\n",myPs->config.comBps2); 
+local_utils.c:    fprintf(fp, "comType2           :	%d\n",myPs->config.commType2); 
+local_utils.c:    fprintf(fp, "autoStart          :	%d\n",myPs->config.autoStart); 
+local_utils.c:  	 		 fprintf(fp, "%f ",myPs->config.measure_gain[i][j]);
+local_utils.c:    fprintf(fp, "multiNum 	 	     :	%d\n",myPs->config.multiNum); 
+local_utils.c:    fprintf(fp, "connectionCheck     :	%d\n",myPs->config.connectionCheck); 
+main.c:	if(myPs->config.functionType == 0) {
+main.c:		if(myPs->config.ttyS_fd > 0)
+main.c:			FD_SET(myPs->config.ttyS_fd, &rfds);
+main.c:		rtn = select(myPs->config.ttyS_fd+1, &rfds, NULL, NULL, &tv);
+main.c:			if(FD_ISSET(myPs->config.ttyS_fd, &rfds) == 1) {
+main.c:					myPs->config.ttyS_fd = rtn;
+main.c:				myPs->config.ttyS_fd = rtn;
+main.c:/*	rtn = ComPortInitialize(myPs->config.comPort, myPs->config.comBps);
+main.c:	myPs->config.ttyS_fd = rtn;*/
+main.c:	myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+main.c:	switch(myPs->signal[ANALOG_METER_SIG_INITIALIZE]) {
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE]++;
+main.c:			myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P0;
+main.c:	if(myPs->config.functionType == 0) {
+main.c:		switch(myPs->signal[ANALOG_METER_SIG_MEASURE]) {
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P11;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P12;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P13;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P14;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P15;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P16;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P17;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P18;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P2;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P3;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P4;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P5;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P6;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P7;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c://						(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P8;
+main.c:		switch(myPs->signal[ANALOG_METER_SIG_MEASURE]) {
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P11;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P12;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P13;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P14;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P15;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P16;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P17;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P18;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] -= P10;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P31;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P32;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P33;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P34;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P35;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P36;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P37;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P38;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] -= P10;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P51;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P52;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P53;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P54;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P55;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P56;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P57;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P58;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE],
+main.c:							(int)myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] -= P10;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P71;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P72;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P73;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P74;
+main.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] += 1;
+main.c:				if(myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] >= 3) {
+main.c:					memset((char *)&myPs->rcvPacket, 0,
+main.c:					memset((char *)&myPs->rcvCmd, 0,
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+main.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] -= P10;
+main.c:	if(myPs->config.ttyS_fd > 0) {
+main.c:		if(closetty(myPs->config.ttyS_fd) < 0) {
+main.c:				myPs->config.ttyS_fd);
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P1;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P3;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P5;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P7;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P11;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P13;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P15;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P17;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P21;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P23;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P25;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P27;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P31;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P33;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P35;
+message.c:					myPs->signal[ANALOG_METER_SIG_INITIALIZE] = P37;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P2;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P3;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P4;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P5;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P6;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P7;
+message.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] = P8;
+message.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = P0;
+serial.c:	tty = myPs->config.comPort;
+serial.c:	if(myPs->config.functionType == 0) {
+serial.c:		bps = myPs->config.comBps;
+serial.c:		bps = myPs->config.comBps2;
+serial.c:	commType = (int)myPs->config.commType2;
+serial.c:	myPs->config.ttyS_fd = rtn;
+serial.c:	if(ioctl(myPs->config.ttyS_fd, FIONREAD, &rcv_size) < 0) {
+serial.c:		close(myPs->config.ttyS_fd);
+serial.c:		read_size = readn(myPs->config.ttyS_fd, maxPacketBuf,
+serial.c:		close(myPs->config.ttyS_fd);
+serial.c:		- myPs->rcvPacket.usedBufSize)) {
+serial.c:		read_size = readn(myPs->config.ttyS_fd, maxPacketBuf,
+serial.c:		close(myPs->config.ttyS_fd);
+serial.c:		memset((char *)&myPs->rcvPacket,0,sizeof(S_ANALOG_METER_RCV_PACKET));
+serial.c:		memset((char *)&myPs->rcvCmd,0,sizeof(S_ANALOG_METER_RCV_COMMAND));
+serial.c:		close(myPs->config.ttyS_fd);
+serial.c:		read_size = readn(myPs->config.ttyS_fd, maxPacketBuf,
+serial.c:			close(myPs->config.ttyS_fd);
+serial.c:	i = myPs->rcvPacket.rcvCount;
+serial.c:	myPs->rcvPacket.rcvCount++;
+serial.c:	if(myPs->rcvPacket.rcvCount > (MAX_SERIAL_PACKET_COUNT-1))
+serial.c:		myPs->rcvPacket.rcvCount = 0;
+serial.c:	start = myPs->rcvPacket.rcvStartPoint[index]
+serial.c:		+ myPs->rcvPacket.rcvSize[index];
+serial.c:		myPs->rcvPacket.rcvStartPoint[i]
+serial.c:		myPs->rcvPacket.rcvStartPoint[i] = start;
+serial.c:	myPs->rcvPacket.rcvSize[i] = read_size;
+serial.c:	myPs->rcvPacket.usedBufSize += read_size;
+serial.c:	start = myPs->rcvPacket.rcvStartPoint[i];
+serial.c:		memcpy((char *)&myPs->rcvPacket.rcvPacketBuf[start],
+serial.c:		memcpy((char *)&myPs->rcvPacket.rcvPacketBuf[0],
+serial.c:		memcpy((char *)&myPs->rcvPacket.rcvPacketBuf[start],
+serial.c:	if(myPs->rcvPacket.rcvCount
+serial.c:		== myPs->rcvPacket.parseCount) return;
+serial.c:	i = myPs->rcvPacket.parseCount;
+serial.c:	myPs->rcvPacket.parseCount++;
+serial.c:	if(myPs->rcvPacket.parseCount > (MAX_SERIAL_PACKET_COUNT-1))
+serial.c:		myPs->rcvPacket.parseCount = 0;
+serial.c:	cmdBuf_index = myPs->rcvCmd.cmdBufSize;
+serial.c:	myPs->rcvCmd.cmdBufSize
+serial.c:		+= myPs->rcvPacket.rcvSize[i];
+serial.c:	start_point = myPs->rcvPacket.parseStartPoint[i];
+serial.c:	j = start_point + myPs->rcvPacket.rcvSize[i];
+serial.c:		memcpy((char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index],
+serial.c:			(char *)&myPs->rcvPacket.rcvPacketBuf[start_point],
+serial.c:			myPs->rcvPacket.rcvSize[i]);
+serial.c:		memcpy((char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index],
+serial.c:			(char *)&myPs->rcvPacket.rcvPacketBuf[start_point], k);
+serial.c:		memcpy((char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index],
+serial.c:			(char *)&myPs->rcvPacket.rcvPacketBuf[start_point], k);
+serial.c:	start_point = myPs->rcvPacket.parseStartPoint[i]
+serial.c:		+ myPs->rcvPacket.rcvSize[i];
+serial.c:		myPs->rcvPacket.parseStartPoint[j]
+serial.c:		myPs->rcvPacket.parseStartPoint[j] = start_point;
+serial.c:	myPs->rcvPacket.usedBufSize
+serial.c:		-= myPs->rcvPacket.rcvSize[i];
+serial.c:	if(myPs->rcvCmd.cmdBufSize < 1) return -1;
+serial.c:	if(myPs->config.functionType == 0) { //Measurement Computing CB-7018
+serial.c:		if(myPs->rcvCmd.cmdBuf[0] == '!' || myPs->rcvCmd.cmdBuf[0] == '?'
+serial.c:			|| myPs->rcvCmd.cmdBuf[0] == '>') {
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\r') {
+serial.c:		} else if(myPs->rcvCmd.cmdBuf[0] == '%' || myPs->rcvCmd.cmdBuf[0] == '$'
+serial.c:			|| myPs->rcvCmd.cmdBuf[0] == '#') {
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\r') {
+serial.c:			myPs->rcvCmd.cmdBufSize -= cmd_size;
+serial.c:			cmd_size = myPs->rcvCmd.cmdBufSize;
+serial.c:			memset((char *)&myPs->rcvCmd.tmpBuf[0],0x00,
+serial.c:			memcpy((char *)&myPs->rcvCmd.tmpBuf[0],
+serial.c:				(char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index], cmd_size);
+serial.c:			memset((char *)&myPs->rcvCmd.cmdBuf[0], 0x00,
+serial.c:			memcpy((char *)&myPs->rcvCmd.cmdBuf[0],
+serial.c:				(char *)&myPs->rcvCmd.tmpBuf[0], cmd_size);
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\r') {
+serial.c:			myPs->rcvCmd.cmdBufSize -= cmd_size;
+serial.c:			cmd_size = myPs->rcvCmd.cmdBufSize;
+serial.c:			memset((char *)&myPs->rcvCmd.tmpBuf[0],0x00,
+serial.c:			memcpy((char *)&myPs->rcvCmd.tmpBuf[0],
+serial.c:				(char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index], cmd_size);
+serial.c:			memset((char *)&myPs->rcvCmd.cmdBuf[0], 0x00,
+serial.c:			memcpy((char *)&myPs->rcvCmd.cmdBuf[0],
+serial.c:				(char *)&myPs->rcvCmd.tmpBuf[0], cmd_size);
+serial.c:		if((myPs->rcvCmd.cmdBuf[0] == 0x1B && myPs->rcvCmd.cmdBuf[1] == 'O')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 0x1B && myPs->rcvCmd.cmdBuf[1] == 'C')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'N' && myPs->rcvCmd.cmdBuf[1] == ' ')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'S' && myPs->rcvCmd.cmdBuf[1] == ' ')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'O' && myPs->rcvCmd.cmdBuf[1] == ' ')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == ' ')
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\n') { //0x0A
+serial.c:		} else if(myPs->rcvCmd.cmdBuf[0] == 0x09
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == '0')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == '1')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == '2')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == 'A')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'D' && myPs->rcvCmd.cmdBuf[1] == 'A')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'T' && myPs->rcvCmd.cmdBuf[1] == 'I')
+serial.c:			|| (myPs->rcvCmd.cmdBuf[0] == 'E' && myPs->rcvCmd.cmdBuf[1] == 'N')
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\n') { //0x0A
+serial.c:			myPs->rcvCmd.cmdBufSize -= cmd_size;
+serial.c:			cmd_size = myPs->rcvCmd.cmdBufSize;
+serial.c:			memset((char *)&myPs->rcvCmd.tmpBuf, 0, MAX_SERIAL_PACKET_LENGTH);
+serial.c:			memcpy((char *)&myPs->rcvCmd.tmpBuf,
+serial.c:				(char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index], cmd_size);
+serial.c:			memset((char *)&myPs->rcvCmd.cmdBuf, 0, MAX_SERIAL_PACKET_LENGTH);
+serial.c:			memcpy((char *)&myPs->rcvCmd.cmdBuf,
+serial.c:				(char *)&myPs->rcvCmd.tmpBuf, cmd_size);
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdBufSize; i++) {
+serial.c:				if(myPs->rcvCmd.cmdBuf[i] == '\n') { //0x0A
+serial.c:			myPs->rcvCmd.cmdBufSize -= cmd_size;
+serial.c:			cmd_size = myPs->rcvCmd.cmdBufSize;
+serial.c:			memset((char *)&myPs->rcvCmd.tmpBuf, 0, MAX_SERIAL_PACKET_LENGTH);
+serial.c:			memcpy((char *)&myPs->rcvCmd.tmpBuf,
+serial.c:				(char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index], cmd_size);
+serial.c:			memset((char *)&myPs->rcvCmd.cmdBuf, 0, MAX_SERIAL_PACKET_LENGTH);
+serial.c:			memcpy((char *)&myPs->rcvCmd.cmdBuf,
+serial.c:				(char *)&myPs->rcvCmd.tmpBuf, cmd_size);
+serial.c:	memset((char *)&myPs->rcvCmd.cmd[0], 0x00,
+serial.c:	memcpy((char *)&myPs->rcvCmd.cmd[0],
+serial.c:		(char *)&myPs->rcvCmd.cmdBuf[0], cmd_size);
+serial.c:	myPs->rcvCmd.cmdSize = cmd_size;
+serial.c:	myPs->rcvCmd.cmdBufSize -= cmd_size;
+serial.c:	cmd_size = myPs->rcvCmd.cmdBufSize;
+serial.c:	memset((char *)&myPs->rcvCmd.tmpBuf[0], 0x00,
+serial.c:	memcpy((char *)&myPs->rcvCmd.tmpBuf[0],
+serial.c:		(char *)&myPs->rcvCmd.cmdBuf[cmdBuf_index], cmd_size);
+serial.c:	memset((char *)&myPs->rcvCmd.cmdBuf[0], 0x00,
+serial.c:	memcpy((char *)&myPs->rcvCmd.cmdBuf[0],
+serial.c:		(char *)&myPs->rcvCmd.tmpBuf[0], cmd_size);
+serial.c:	memcpy((char *)&header, (char *)&myPs->rcvCmd.cmd[0],
+serial.c:	if(myPs->config.CmdRcvLog == P1) {
+serial.c:		if(myPs->config.CommCheckLog == P1) {
+serial.c:			userlog(METER2_LOG, psName, "recvCmd %s:end\n", myPs->rcvCmd.cmd);
+serial.c:			userlog(METER2_LOG, psName, "recvCmd %s:end\n", myPs->rcvCmd.cmd);
+serial.c:	if(myPs->config.CmdRcvLog_Hex == P1) {
+serial.c:		if(myPs->config.CommCheckLog == P1) {
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdSize; i++) {
+serial.c:				userlog2(METER2_LOG, psName, " %x", myPs->rcvCmd.cmd[i]);
+serial.c:			for(i=0; i < myPs->rcvCmd.cmdSize; i++) {
+serial.c:				userlog2(METER2_LOG, psName, " %x", myPs->rcvCmd.cmd[i]);
+serial.c:	if(myPs->config.functionType == 0) { //Measurement Computing CB-7018
+serial.c:				myPs->rcvCmd.cmdFail++;
+serial.c:				if(myPs->rcvCmd.cmdFail >= 3) {
+serial.c:					myPs->rcvCmd.cmdFail = 0;
+serial.c:					myPs->rcvCmd.cmdBufSize = 0;
+serial.c:					memset((char *)&myPs->rcvCmd.cmdBuf[0], 0x00,
+serial.c:				myPs->rcvCmd.cmdFail = 0;
+serial.c:	if(length > myPs->rcvCmd.cmdSize) {
+serial.c:			length, myPs->rcvCmd.cmdSize);
+serial.c:	//printf("cmdsize %d %d\n",myPs->rcvCmd.cmdSize,myPs->signal[ANALOG_METER_SIG_MEASURE]);
+serial.c:	if(myPs->rcvCmd.cmdSize == 7) {
+serial.c:		if((myPs->rcvCmd.cmd[0] == 0x1B)
+serial.c:			&& (myPs->rcvCmd.cmd[1] == 'O' || myPs->rcvCmd.cmd[1] == 'C')
+serial.c:			&& (myPs->rcvCmd.cmd[2] == ' ') && (myPs->rcvCmd.cmd[5] == 0x0D)) {
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE]);
+serial.c:	} else if(myPs->rcvCmd.cmdSize == 27) {
+serial.c:		memcpy((char *)&answer, (char *)myPs->rcvCmd.cmd, 27);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], myPs->rcvCmd.cmdSize);*/
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.Status);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.SP1);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.AnalogChannel);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE],
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE],
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE],
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.Sign);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.E);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.Plus_Minus);
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], answer.A_CR);
+serial.c:	memcpy((char *)&answer, (char *)&myPs->rcvCmd.cmd[0],
+serial.c:			if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P0) {
+serial.c:				index = (int)myPs->signal[ANALOG_METER_SIG_MEASURE] % 10;
+serial.c:				if(index > myPs->config.countMeter) {
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] = (unsigned char)index;
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:			index = (int)myPs->signal[ANALOG_METER_SIG_MEASURE] % 10;
+serial.c:			if(index > myPs->config.countMeter) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = (unsigned char)index;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	temp_bd = (int)(myPs->signal[ANALOG_METER_SIG_MEASURE] % 10) - 1;
+serial.c:		if(myPs->config.multiNum > 1){
+serial.c:			i = (temp_bd * 8 + (temp_ch))/myPs->config.multiNum; //temp_hw_no index
+serial.c:			myPs->misc.org_temp[temp_bd][temp_ch] = temp[temp_ch];
+serial.c:					*myPs->config.measure_gain[temp_bd][temp_ch])
+serial.c:					+myPs->config.measure_offset[temp_bd][temp_ch];
+serial.c:				myPs->temp[i].temp1 = myData->bData[bd].cData[ch].op.temp1;
+serial.c:					*myPs->config.measure_gain[temp_bd][temp_ch])
+serial.c:					+myPs->config.measure_offset[temp_bd][temp_ch];
+serial.c:				myPs->temp[i].temp = myData->bData[bd].cData[ch].op.temp;
+serial.c:				myPs->misc.org_temp[temp_bd][temp_ch] = temp[temp_ch];
+serial.c:						*myPs->config.measure_gain[temp_bd][temp_ch])
+serial.c:						+myPs->config.measure_offset[temp_bd][temp_ch];
+serial.c:				myPs->temp[i].temp = myData->bData[bd].cData[ch].op.temp;
+serial.c:				if(myPs->config.connectionCheck == P1) {
+serial.c:	if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P11) {
+serial.c:		if(myPs->config.countMeter > 1) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P2;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P12) {
+serial.c:		if(myPs->config.countMeter > 2) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P3;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P13) {
+serial.c:		if(myPs->config.countMeter > 3) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P4;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P14) {
+serial.c:		if(myPs->config.countMeter > 4) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P5;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P15) {
+serial.c:		if(myPs->config.countMeter > 5) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P6;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P16) {
+serial.c:		if(myPs->config.countMeter > 6) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P7;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P17) {
+serial.c:		if(myPs->config.countMeter > 7) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P8;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	}else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P18) {
+serial.c:		if(myPs->config.countMeter > 8) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P9;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:					if(myPs->config.readType == READ_T_K) { //k type
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:					if(myPs->config.readType == READ_T_K) {
+serial.c:					} else if(myPs->config.readType == READ_V) {
+serial.c:					} else if(myPs->config.readType == READ_T_T) { //t type
+serial.c:	if(myPs->config.functionType == 0) {
+serial.c:	memset((char *)&myPs->rcvPacket, 0, sizeof(S_ANALOG_METER_RCV_PACKET));
+serial.c:	memset((char *)&myPs->rcvCmd, 0, sizeof(S_ANALOG_METER_RCV_COMMAND));
+serial.c:	memset((char *)&myPs->rcvPacket, 0, sizeof(S_ANALOG_METER_RCV_PACKET));
+serial.c:	memset((char *)&myPs->rcvCmd, 0, sizeof(S_ANALOG_METER_RCV_COMMAND));
+serial.c:	memset((char *)&myPs->rcvPacket, 0, sizeof(S_ANALOG_METER_RCV_PACKET));
+serial.c:	memset((char *)&myPs->rcvCmd, 0, sizeof(S_ANALOG_METER_RCV_COMMAND));
+serial.c://		sizeof(S_ANALOG_METER_RCV_CMD_ANSWER2), myPs->rcvCmd.cmdSize);
+serial.c:	memcpy((char *)&answer, (char *)&myPs->rcvCmd.cmd, myPs->rcvCmd.cmdSize);
+serial.c:	temp_bd = ((int)myPs->signal[ANALOG_METER_SIG_MEASURE] % 10) - 1;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], temp_ch,
+serial.c:	if(temp_bd != ((int)myPs->signal[ANALOG_METER_SIG_COMM_BUS_ENABLE] - 1)) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_COMM_BUS_ENABLE]-1, temp_bd);
+serial.c:		myPs->temp[i].temp = temp;
+serial.c:/*		index = (int)myPs->Array2[i][0] - 1; //temp_monitor_no index
+serial.c:			//ch = myPs->Array1[index][1] - 1;
+serial.c:			myPs->tmp_value[ch] = temp + myPs->config.measure_offset[temp_bd];
+serial.c:			if(ch == 1) myPs->tmp_value[ch] = 21200;
+serial.c:			else if(ch == 15) myPs->tmp_value[ch] = 36300;
+serial.c:			else if(ch == 17) myPs->tmp_value[ch] = 20500;
+serial.c:			else if(ch == 30) myPs->tmp_value[ch] = 23900;
+serial.c:			else myPs->tmp_value[ch] = 9999000;
+serial.c:			myPs->value[ch] = myPs->tmp_value[ch];
+serial.c:	memset((char *)&myPs->rcvPacket, 0, sizeof(S_ANALOG_METER_RCV_PACKET));
+serial.c:	memset((char *)&myPs->rcvCmd, 0, sizeof(S_ANALOG_METER_RCV_COMMAND));
+serial.c://		myPs->signal[ANALOG_METER_SIG_MEASURE],
+serial.c://		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR]);
+serial.c:	if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P31) {
+serial.c:		if(myPs->config.countMeter >= 1) {
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P41;
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE] = P21;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P32) {
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE] += 10;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P33) {
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE] += 10;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	} else if(myPs->signal[ANALOG_METER_SIG_MEASURE] == P34) {
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE] += 10;
+serial.c:		myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:	memcpy((char *)&buf, (char *)&myPs->rcvCmd.cmd[3], 2);
+serial.c:	measure_bd = (int)myPs->signal[ANALOG_METER_SIG_MEASURE] % 10;
+serial.c:	if(myPs->rcvCmd.cmd[1] == 'O') {
+serial.c:		if(bd >= 1 && bd <= myPs->config.countMeter) {
+serial.c:				myPs->signal[ANALOG_METER_SIG_COMM_BUS_ENABLE]
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE] += 10;
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:				memset((char *)&myPs->rcvPacket, 0,
+serial.c:				memset((char *)&myPs->rcvCmd, 0,
+serial.c:	} else if(myPs->rcvCmd.cmd[1] == 'C') {
+serial.c:		if(bd >= 1 && bd <= myPs->config.countMeter) {
+serial.c:				myPs->signal[ANALOG_METER_SIG_COMM_BUS_ENABLE] = P0;
+serial.c:				/*if(myPs->signal[ANALOG_METER_SIG_MEASURE] < P71) {
+serial.c:					myPs->signal[ANALOG_METER_SIG_MEASURE] += 10;
+serial.c:					if((bd+1) <= myPs->config.countMeter) {
+serial.c:						myPs->signal[ANALOG_METER_SIG_MEASURE] = (int)(bd+1);
+serial.c:						myPs->signal[ANALOG_METER_SIG_MEASURE] = P1;
+serial.c:				myPs->signal[ANALOG_METER_SIG_MEASURE_ERROR] = 0;
+serial.c:				memset((char *)&myPs->rcvPacket, 0,
+serial.c:				memset((char *)&myPs->rcvCmd, 0,
+serial.c:			myPs->signal[ANALOG_METER_SIG_MEASURE], (char)myPs->rcvCmd.cmd[1]);
+serial.c:	if(myPs->config.CmdSendLog == P1) {
+serial.c:		if(myPs->config.CommCheckLog == P1) {
+serial.c:	if(myPs->config.CmdSendLog_Hex == P1) {
+serial.c:		if(myPs->config.CommCheckLog == P1) {
+serial.c:	ioctl(myPs->config.ttyS_fd, TIOCMBIS, &modemctlline);
+serial.c:	ioctl(myPs->config.ttyS_fd, TIOCMBIS, &modemctlline);
+serial.c:	i = writen(myPs->config.ttyS_fd, packet, size);
+serial.c:	    ioctl(myPs->config.ttyS_fd, TIOCSERGETLSR, &txemptystate);
+serial.c:	ioctl(myPs->config.ttyS_fd, TIOCMBIC, &modemctlline);
+serial.c:	tcdrain(myPs->config.ttyS_fd);

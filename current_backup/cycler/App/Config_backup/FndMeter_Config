@@ -1,0 +1,8 @@
+comPort				:	1
+comBps				:	19200
+CmdSendLog			:	0
+CmdRcvLog			:	0
+CmdSendLog_Hex		:	0
+CmdRcvLog_Hex		:	0
+CommCheckLog		:	0
+installCh			:	0

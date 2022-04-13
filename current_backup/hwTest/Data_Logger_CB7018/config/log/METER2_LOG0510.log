@@ -1,0 +1,30 @@
+m001:Wed May 10 17:17:49 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:17:49 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:17:53 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:17:54 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:17:59 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:17:59 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:01 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:01 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:03 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:03 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:05 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:05 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:09 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:09 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:11 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:11 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:13 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:13 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:14 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:15 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:18:19 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:18:19 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:25:59 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:25:59 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:26:01 2006:Meter2: sendCmd 24 30 31 4d d:end
+m001:Wed May 10 17:26:01 2006:Meter2: recvCmd 21 30 31 37 30 31 38 d:end
+m001:Wed May 10 17:26:44 2006:Meter2: sendCmd 24 30 31 36 d:end
+m001:Wed May 10 17:26:44 2006:Meter2: recvCmd 21 30 31 46 46 d:end
+m001:Wed May 10 17:28:13 2006:Meter2: sendCmd 24 30 31 46 d:end
+m001:Wed May 10 17:28:14 2006:Meter2: recvCmd 21 30 31 42 31 2e 33 d:end

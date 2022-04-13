@@ -1,0 +1,13 @@
+PortPerCh			:	2
+installedInverter	:	4
+hallCT				:	0.0006666
+caliVohm			:	1.000000
+caliUse				:	1
+powerModuleNo		:	2
+CaliV_amp			:	2.000000
+setCaliNum			:	3
+cali_delay_time(mS)	:	3000
+invPerCh			:	4
+parallel_Inv		:	3
+inverterType		:	0
+

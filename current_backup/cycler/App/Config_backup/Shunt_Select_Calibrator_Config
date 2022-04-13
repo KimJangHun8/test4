@@ -1,0 +1,5 @@
+Calibrator_RANGE	:	R1			R2			R3			R4
+Setting_Shunt[mOhm] :	1.0			10.0		100.0		0.0
+Shunt_Range_Select	:	1			1			1			1
+SerialNo[20byte]	:	20130622	20130622	20130622	20130622
+

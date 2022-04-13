@@ -1,0 +1,26 @@
+Addr	No		Bit		Flag		Description
+604		1		0		1			PS_ON_1
+604		2		1		0			PS_ON_2
+604		3		2		1			RUN_LED
+604		4		3		1			FAN_RELAY
+604		5		4		0			spare
+604		6		5		0			spare
+604		7		6		1			POWER_OFF_CNT
+604		8		7		1			POWER_OFF
+603		9		0		1			CHARE_RELAY
+603		10		1		1			DISCHARE_RELAY
+603		11		2		0			spare
+603		12		3		0			spare
+603		13		4		0			spare
+603		14		5		0			spare
+603		15		6		0			spare
+603		16		7		0			spare
+610		17		0		0			STATE_RUN
+610		18		1		0			STATE_STOP
+610		19		2		0			STATE_PAUSE
+610		20		3		0			STATE_BUZZER
+610		21		4		0			spare
+610		22		5		0			MAIN_MC_OFF
+610		23		6		0			spare
+610		23		7		0			spare
+

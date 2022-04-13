@@ -1,0 +1,2 @@
+ 4540 ttyp0    S      0:00 sh -c ps -ax | grep CaliMeter2 > /project/Switching_5
+ 4542 ttyp0    S      0:00 grep CaliMeter2

@@ -1,0 +1,64 @@
+OVP					:	1
+ChCheckCurrent		:	1
+OTP					:	1
+MAIN_BD_OT			:	0
+HW_FAULT_COND		:	1
+SW_FAULT_COND		:	1
+MINUS_CELL			:	0
+I_OFFEST_CALI		:	0
+SEMI_SWITCH_TYPE	:	0
+CHAMBER_TEMP_WAIT	:	0
+SDI_MES_USE			:	0
+OT_PAUSE			:	0
+CHAMBER_ERROR_PROC	:	0
+SENS_COUNT_TYPE		:	2
+V_SENS_REM_NO		:	1
+I_SENS_REM_NO		:	1
+DELTA_V_I			:	0
+CHAMBER_TYPE		:	0
+PATTERN_FTP			:	0
+SBC_RECOVERY		:	0
+PAUSE_DATA_SAVE		:	0
+CHANGE_VI_CHECK		:	0
+DCR_TYPE			:	0
+PATTERN_PROCESS		:	0
+PATTERN_CH_SAVE		:	0
+DISCONNECT_DAY		:	6
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Update : 2021.11.29
+Writer : Hun
+================================================================================
+OVP					=>	Over Voltage Protect					(Default : 1)
+ChCheckCurrent		=>	Standby Channels Current Output Detect	(Default : 1)
+OTP					=>	Over Temperature Protect				(Default : 1)
+MAIN_BD_OT			=>	NO PROCESS
+HW_FAULT_COND		=>	H/W Safety Fault Detect Flag			(Default : 1)
+SW_FAULT_COND		=>	S/W Safety Fault Detect Flag			(Default : 1)
+MINUS_CELL			=>	NO PROCESS
+I_OFFSET_CALI		=>	Current Offset Calibration Use Flag		(Default : 0)
+SEMI_SWITCH_TYPE	=> in Case of 10V < MaxVoltage, Setting 1.	(Default : 0)
+CHAMBER_TEMP_WAIT 	=> Chamber Temperature Wait UseFlag			(Default : 0)
+SDI_MES_USE			=> SAMSUNG SDI MES4 FLAG					(Default : 0)
+OT_PAUSE			=> OT FAULT -> Fault PowerModule Use Ch Pause
+CHAMBER_ERR_PROC	=> 0 : Unit Shutdown, 1 : Error Chamber Use Ch Pause
+SENS_COUNT_TYPE		=> Sens Count Increment Type
+					   0 ; Filtering not use type
+					   1 : General type
+					   2 : Rt Period division filtering type
+				   3 : Before modification General type (2019.08.23)
+V_SENS_REM_NO		=> AD Filtering V Sens MIN, MAX Remove Number
+I_SENS_REM_NO		=> AD Filtering I Sens MIN, MAX Remove Number
+DELTA_V_I			=> DELTA Fault (0: Not Use / 1: END / 2: PAUSE)
+CHAMBER_TYPE		=> 0 : Not Use, 1 : BA Serise(16bit), 2 : SA/CA Serise(6bit)
+PATTERN_FTP			=> 0 : Default, 1 : ftp (Pattern file Receive)
+SBC_RECOVERY		=> 0 : Default, 1 : SBC Recovery Use
+PAUSE_DATA_SAVE		=> 0 : Default, 1 : Fault Recording Use (LG)
+CHANGE_VI_CHECK     => 0 : Not Use, 1 : HYUNDAE, 2: LG
+DCR_TYPE		    => 0 : Default, 1 : NV (Impedance Logic)
+PATTERN_PROCESS	    => 0 : Default, 1 : Pattern input Change
+PATTERN_CH_SAVE		=> 0 : userData Save, 1: pattern Ch Save
+

@@ -1,0 +1,53 @@
+comPort				:	2
+comBps				:	9600
+CmdSendLog			:	0
+CmdRcvLog			:	0
+CmdSendLog_Hex		:	0
+CmdRcvLog_Hex		:	0
+CommCheckLog		:	0
+readType			:	0
+measureI			:	2
+I_offset			:	0
+Shunt_Sel_Cali		:	1
+Lan_Use				:	0
+CaliMeterIP			:	192.168.7.2
+MeterSock_Port		:	5025
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2017.01.04
+Writer : OYS
+================================================================================
+comPort				=> Serial Port No. (Default : 1)
+comBps				=> Communication Speed (Default : 9600)
+CmdSendLog			=> CmdSendLog Print Flag
+CmdRcvLog			=> CmdRcvLog Print Flag
+CmdSendLog_Hex		=> CmdSendLog_Hex Print Flag
+CmdRcvLog_Hex		=> CmdRcvLog_Hex Print Flag
+CommCheckLog		=> CommunicationChekLog Print Flag
+readType			=> Read Type
+						0 : READ_V_V
+						1 : READ_V_I
+
+measureI			=> Shunt Type
+						1 : 10 mOhm
+						2 :  1 mOhm
+						3 : DCCT 600A/400mA
+						4 : DCCT 150A/200mA
+						5 : 10 Ohm, 100 Ohm
+						6 : meter DCI
+						7 : 0.1 mOhm
+						8 : 100 mOhm
+
+I_offset			=> (Default : 0)
+Shunt_Sel_Cali		=> Shunt Select Calibrator
+                        1 : Normal Calibration (Default)
+                        2 : Auto Calibration MAIN_REV11
+                        3 : SMPS Calibration Digital_Cycler 
+Lan_Use				=>  0 : 34401A Use 232 Cable 
+						1 : 34461A Use Lan Cable
+						2 : 34461A Use 232 to Lan Converter
+CaliMeterIP			=> Meter IP
+MeterSock_Port		=> Meter Communication Socket Port No.

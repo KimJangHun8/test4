@@ -1,0 +1,36 @@
+Input_Addr_No	1
+Output_Addr_No	2
+Expend_Addr_No	1
+No	Addr(Input)	Addr(Output)	Addr(Expend)	Description
+0	602			604				601				spare
+1	0			603				602				spare
+2	0			0				0				spare
+3	0			0				0				spare
+4	0			0				0				spare
+5	0			0				0				spare
+6	0			0				0				spare
+7	0			0				0				spare
+8	0			0				0				spare
+9	0			0				0				Spare
+10	0			0				0				Spare
+11	0			0				0				Spare
+12	0			0				0				Spare
+13	0			0				0				Spare
+14	0			0				0				Spare
+15	0			0				0				Spare
+16	0			0				0				Spare
+17	0			0				0				Spare
+18	0			0				0				Spare
+19	0			0				0				Spare
+20	0			0				0				Spare
+21	0			0				0				Spare
+22	0			0				0				Spare
+23	0			0				0				Spare
+24	0			0				0				Spare
+25	0			0				0				Spare
+26	0			0				0				Spare
+27	0			0				0				Spare
+28	0			0				0				Spare
+29	0			0				0				Spare
+30	0			0				0				Spare
+31	0			0				0				Spare

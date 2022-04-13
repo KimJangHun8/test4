@@ -1,0 +1,17 @@
+#!/bin/sh
+
+insmod /usr/src/rtlinux-3.2-pre2/modules/rtl.o
+insmod /usr/src/rtlinux-3.2-pre2/modules/rtl_time.o
+if [ -f /usr/src/rtlinux-3.2-pre2/modules/rtl_posixio.o ]; then
+	insmod /usr/src/rtlinux-3.2-pre2/modules/rtl_posixio.o
+fi
+insmod /usr/src/rtlinux-3.2-pre2/modules/rtl_fifo.o
+insmod /usr/src/rtlinux-3.2-pre2/modules/rtl_sched.o
+if [ -f /usr/src/rtlinux-3.2-pre2/modules/psc.o ]; then
+	insmod /usr/src/rtlinux-3.2-pre2/modules/psc.o
+fi
+
+#kjgw_can
+insmod -f ./rt_can.o
+
+exit 0

@@ -1,0 +1,94 @@
+installedBd			:	1
+installedCh			:   32
+chPerBd				:	32
+rangeV				:	1
+rangeI				:	1
+maxVoltage			:	5000000 0 0 0
+minVoltage			:	0 0 0 0
+maxCurrent			:	200000000 0 0 0
+minCurrent			:	-200000000 0 0 0
+ratioVoltage		:	0
+ratioCurrent		:	0
+watchdogFlag		:	1
+ADC_type			:	1
+hwSpec				:	202
+capacityType		:	0
+totalJig			:	1
+bdInJig1_8			:	1	0	0	0	0	0	0	0
+bdInJig9_16			:	0	0	0	0	0	0	0	0
+shuntOhm			:	0.0		0.0		0.0		0.0	
+gain				:	1.0		0.0		0.0		0.0
+adAmp				:	1.0		1.0		1..0
+rt_scan_type		:	5
+installedTemp		:	0
+installedAux		:	0
+installedCan		:	0
+auto_v_cali			:	0
+parallelMode		:	1
+DAC_type			:	0
+ADC_num				:	0
+AD_offset			:	0.0
+FeedbackFlag		:	0
+MainBdType			:	1
+FadBdUse			:	0
+RangeSelectFlag		:	0x10	0x20	0x40	0x80
+Range0				:	0		0		0		0
+Range1				:	0		0		0		0
+Range2				:	0		0		0		0
+Range3				:	0		0		0		0
+Range4				:	0		0		0		0
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Update : 2017.01.16
+Writer : OYS
+================================================================================
+installedBd			=> insalled MainBoard No.
+installedCh			=> installed Total Ch
+chPerBd				=> Ch Per MainBD
+rangeV				=> Voltage Range No.
+rangeI				=> Current Range No.
+maxVoltage
+minVoltage
+maxCurrent
+minCurrent
+ratioVoltage		=> 0 : Micro, 1 : Nano (Default : 0)
+ratioCurrent		=> 0 : Micro, 1 : Nano (Default : 0)
+watchdogFlag	 	=> WatchDog UseFlag (Default : 1)	
+ADC_type			=> 0 : COMM_TYPE, 1 : 7805 (Default : 1)
+hwSpec				=> H/W SPEC No. ex) 63 : L_5V_150A_R3_AD2
+capacityType		=> 0 : AmpareHour, 1 : Farad
+totalJig
+bdInJig1_8
+bdInJig9_16
+shuntOhm			=> Range Shunt Value
+gain				=> Range Gain Value
+adAmp				=> AD_AMP	VOLTAGE_AMP	 CURRENT_AMP
+rt_scan_type		=> 0 : 100ms	=> ADC 1EA, chPerBD <= 32CH
+									   ADC 2EA, chPerBD <= 64CH
+					   1 : 50ms		=> ADC 1EA, chPerBD <= 16CH
+									   ADC 2EA, chPerBD <= 32CH
+					   2 : 25ms		=> ADC 2EA, chPerBD <= 16CH
+					   3 : 20ms		=> ADC 2EA, chPerBD <=  8CH
+					   4 : 100ms_2	=> ADC 1EA, chPerBD <= 64CH
+					   5 : 10ms		=> ADC 2EA, chPerBD <=  8CH
+					   6 : 100ms_CAN TYPE
+installedTemp		=> AuxTemperature installed Ch No.
+installedAux		=> AuxVoltage installed Ch No.
+installedCan		=> AuxCan installed Ch No.
+auto_v_cali			=> auto Voltage Cali (Default : 1)
+parallelMode		=> parallelMode UseFlag
+DAC_type			=> 0 : 712P, 1 : 7741
+ADC_num				=> ADC No.(1:ADC 1EA, 2:ADC 2EA)
+AD_offset			=> Charge Current AD Offset Value (Default : 0.00002)
+FeedbackFlag		=> SoftFeedback UseFlag
+MainBdType			=> 0 : CPLD TYPE, 1: FPGA TYPE
+FadBdUse			=> FAD BD UseFlag
+RangeSelectFlag
+Range0
+Range1
+Range2
+Range3
+Range4

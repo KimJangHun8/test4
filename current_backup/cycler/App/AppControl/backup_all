@@ -1,0 +1,36 @@
+#!/bin/bash
+DATE="`date '+%Y%m%d%H%M'`"
+FILE=/root/cycler_data/config/parameter/AppControl_Config
+
+cd /project/Cycler
+mkdir project_backup_all
+cd project_backup_all
+
+cp -rf ../current/ current_backup
+tar cvfz current_backup.tar.gz current_backup/*
+rm -rf current_backup
+echo "current_backup end."
+sleep 1
+
+cp -rf /root/cycler_data/config/ config_backup
+tar cvfz config_backup.tar.gz config_backup/*
+rm -rf config_backup
+echo "config_backup end."
+sleep 1
+
+cp -rf /root/cycler_data/log/ log_backup
+tar cvfz log_backup.tar.gz log_backup/*
+rm -rf log_backup
+echo "log_backup end."
+sleep 1
+
+cp -rf /root/cycler_data/resultData/ resultData_backup
+tar cvfz resultData_backup.tar.gz resultData_backup/*
+rm -rf resultData_backup
+echo "resultData_backup end."
+sleep 1
+
+cd /project/Cycler
+tar cvfz `cat $FILE | awk '{if(NR==1) print $3}'`_project_backup_all_$DATE.tar.gz project_backup_all/*
+rm -rf project_backup_all
+echo "project_backup_all end."

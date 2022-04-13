@@ -1,0 +1,34 @@
+result_saveFlag		:	1
+monitoring_saveFlag	:	1
+check_saveFlag		:	1
+zero_sec_data_save	:	1
+save_data_type		:	0
+save_10ms_time		:	500
+save_50ms_time		:	3000
+save_100ms_time		:	6000
+auxData_saveFlag	:	0
+saveCond_Check_time	:	10
+pause_data_time		:	100
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================================
+Option Setting Description
+Date : 2015.06.19
+Writer : OYS
+0:False, 1:True, Time Value => 100msec : 10, 1sec : 100, 1min : 6000
+================================================================================
+result_saveFlag		=> SBC resultData Save					(Default : 1)
+monitoring_saveFlag	=> GUI resultData Save					(Default : 1)
+check_saveFlag		=> Not USE								(Default : 1)
+zero_sec_data_save	=> Step Zero Sec Data Save				(Default : 1)
+save_data_type		=> Pulse Type Data Save					(Default : 0)
+save_10ms_time		=> 10ms Date Save Time					(Default : 500)
+					ex) value 500, 10ms Data Save up to stepRunTime 5sec.
+save_50ms_time		=> 50ms Date Save Time					(Default : 3000)
+					ex) value 1000, 50ms Data Save up to stepRunTime 10sec.
+save_100ms_time		=> 100ms Date Save Time					(Default : 6000)
+					ex) value 6000, 100ms Data Save up to stepRunTime 1min.
+auxData_saveFlag	=> Aux Data Save						(Default : 0)
+saveCond_Check_time => Save condition check time setting 	(Default : 10)
+pause_data_time     => Fault recording Time 				(Default : 100)

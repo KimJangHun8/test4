@@ -1,0 +1,17 @@
+######################################
+########### default ##################
+######################################
+VERSION_DETAIL_SHOW 1
+_GUI_OPCUA_TYPE
+_CH_CHAMBER_DATA
+_USER_VI
+NETWORK_VERSION == 4102  CH_AUX_DATA 0
+NETWORK_VERSION == 4103  CH_AUX_DATA 1
+######################################
+
+##MAIN_P_VER1 : 4001-S01-R001-N01
+
+##MAIN_P_VER1 : 4002-S01-R001-N01
+_TEMP_CALI
+
+##MAIN_P_VER1 : before version

@@ -1,0 +1,2 @@
+ 1987 pts/0    S      0:00 sh -c ps -ax | grep Meter2 > /project/Data_Logger/con
+ 1989 pts/0    S      0:00 grep Meter2

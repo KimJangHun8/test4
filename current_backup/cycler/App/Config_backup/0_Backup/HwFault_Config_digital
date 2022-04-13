@@ -1,0 +1,8 @@
+OVP(uV)					: 4500000
+ChCheckCurrent(uA)		: 1000000
+OT(1'C=1000)			: 100000
+Drop_V_Charge(uV)		: 150000
+Drop_V_DisCharge(uV)	: 150000
+CV_Voltage_Drop(uV)		: 0
+CV_Current_Drop(uV)		: 0
+

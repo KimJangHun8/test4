@@ -1,0 +1,2 @@
+cd ../DAQ_Client
+./DAQ_Client &
